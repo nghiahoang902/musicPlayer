@@ -1,0 +1,93 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />    
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="#">
+    <title>Music player</title>
+</head>
+<script src="./app.js" defer></script>
+<body>
+    <div class="player ">
+        <!-- Dashboard -->
+        <div class="dashboard">
+            <!-- header -->
+            <div class="header">
+                <h6>Now playing</h6>
+                <h4>song playing</h4>
+            </div>
+
+            <!-- CD -->
+            <div class="cd">
+                <div class="cd-thumb">
+                <!-- <img id="cd-thumb-1" src="./img/bigcityboi.jpg" alt=""> -->
+                </div>
+            </div>
+
+            <!-- Control -->
+            <div class="control">
+                <div class="btn btn-repeat">
+                    <i class="fa-solid fa-repeat"></i>
+                </div>
+
+                <div class="btn btn-previous">
+                    <i class="fa-solid fa-backward-step"></i>
+                </div>
+
+                <div class="btn btn-play">
+                    <i class="fa-sharp fa-regular fa-circle-play"></i>
+                </div>
+    
+                <div class="btn btn-pause" >
+                    <i class="fa-regular fa-circle-pause"></i>
+                </div>
+
+                <div class="btn btn-next">
+                    <i class="fa-solid fa-forward-step"></i>
+                </div>
+
+                <div class="btn shuffle">
+                    <i class="fa-solid fa-shuffle"></i>
+                </div>
+            </div>
+
+            <!-- progress -->
+            <div class="progress-range">
+                <input type="range" id="progress" class="progress" min="1" max="100" value="0" step="1">
+                <audio id="audio" src=""></audio>
+            </div>
+        </div>
+
+        <!-- playlists -->
+        <div class="playlist">
+            <div class="song">
+                <img id="song-thumb" src="./img/bigcityboi.jpg" style="width: 40px; border-radius: 50%;">
+
+                <div class="song-body">
+                    <h4 class="title">Music Name</h4>
+                    <span class="author">Singer</span>
+                </div>
+
+                <div class="option">
+                    <i class="fa-solid fa-ellipsis options"></i>
+                </div>
+            </div>
+        </div>    
+    </div>
+</body>
+</html>
+
+<!-- 
+    1. Render songs
+    2. Scroll top
+    3. Play/ Pause/ Seek
+    4. CD rotate
+    5. Next/ Previous
+    6. Random
+    7. Next/ Repeat when ended
+    8. Active song
+    9. Scroll active song into view
+    10. Play song when click
+ -->
